@@ -8,7 +8,12 @@
         @auth
         <li><a class="p-3" href="{{route('home')}}">{{auth()->user()->name}}</a></li>
             <li><a href="{{route('dashboard')}}">Dashboard</a></li>
-        <li><a class="p-3" href="#">Logout</a></li>
+            <li>
+                <form class="p-3 inline" action="{{route('logout')}}" method="post">
+                    @csrf
+                  <button type="submit">Logout</button>
+                </form>
+            </li>
         @endauth
 
         @guest
