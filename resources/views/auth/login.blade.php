@@ -34,7 +34,12 @@
                     </div>
                     @enderror
                 </div>
-
+                 <div class="mb-4">
+                     <div class="flex items-center">
+                         <input class="mr-2" type="checkbox" name="remember" id="remember">
+                         <label for="remember">Remember me</label>
+                     </div>
+                 </div>
                 <div>
                     <button type="submit" class="bg-gray-500 text-white px-4 py-3 rounded font-medium w-full">Login</button>
                     <a class="text-center text-blue-500 pt-5 block" href="{{route('register')}}">I don't have an account!</a>
