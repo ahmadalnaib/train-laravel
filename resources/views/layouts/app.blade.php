@@ -11,10 +11,13 @@
 <body class="bg-gray-100">
 
 @include('layouts.navbar')
-
+@include('layouts.messages')
 <div class="container mx-auto mt-6 px-6">
+
     @yield('content')
 </div>
 
+
+<script src="{{}}"></script>
 </body>
 </html>
